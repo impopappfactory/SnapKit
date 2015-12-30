@@ -116,8 +116,8 @@ private func descriptionForObject(object: AnyObject) -> String {
     let pointerDescription = NSString(format: "%p", ObjectIdentifier(object).uintValue)
     var desc = ""
     
-    desc += object.dynamicType.description()
-    
+//    desc += object.dynamicType.description()
+
     if let object = object as? View {
         desc += ":\(object.snp_label ?? pointerDescription)"
     } else if let object = object as? LayoutConstraint {
